@@ -1,0 +1,23 @@
+import * as React from 'react';
+import Svg, {G, Path, Defs, ClipPath} from 'react-native-svg';
+
+const NextScreenSvg = () => (
+  <Svg width={8} height={13} fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <G clipPath='url(#a)'>
+      <Path
+        d='m2 11.3 4.8-4.8L2 1.7'
+        stroke='#4A5F73'
+        strokeWidth={1.5}
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </G>
+    <Defs>
+      <ClipPath id='a'>
+        <Path fill='#fff' transform='translate(.8 .5)' d='M0 0h7.2v12H0z' />
+      </ClipPath>
+    </Defs>
+  </Svg>
+);
+
+export default NextScreenSvg;
